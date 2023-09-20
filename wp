@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <style> 
+        body { 
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fa59e2;
+            }
+        #myForm {
+            width: 500px;
+            margin: 20px auto;
+            padding: 40px;
+            background-color: #da89e6;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            }
+        label {
+            font-weight: bold;
+            }
+        input[type="text"],
+        input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        input[type="button"] {
+            padding: 10px 20px;
+            background-color: #2c2d2d;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            }  
+        input[type="button"]:hover {
+            background-color: #51035f;
+            }
+        </style>
+    </head>
+    <body>
+    <form id="myForm" action="SignUp.php" method="post">
+        <fieldset>
+        <label for="User_Name">User Name:</label><br>
+        <input type="text" id="User_Name" name="User_Name" required><br>
+        
+        <label for="Password">Password:</label><br>
+        <input type="password" id="Password" name="Password" required><br>
+        
+        <input type="submit" value="Log In">
+        </fieldset>
+    </form> 
+</body>
+</html>
